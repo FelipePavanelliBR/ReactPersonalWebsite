@@ -57,6 +57,7 @@ function App() {
         </div>
         <div className="main-images">
             <img src="src/images/brasil.jpeg" height="450" width="350"/>
+            
             <img src="src/images/funny.jpg" height="450" width="350"/>
         </div>
         <button id="cute" onClick={spin}>spin me!</button>
@@ -73,12 +74,42 @@ function App() {
         </ul>
         <p>Here's some funny bread-related pictures</p>
 
-        <section className="main-images">
-          <img id="new-pic" src="src/images/bread.jpg" height="500" width="400"/>
-          <img id = "breading" src="src/images/bread2.jpg" height="500" width="400"/>
-        </section>   
-        <button id="back" onClick={scrollBack}>bring me back!</button>
+        <section className="main-images">          
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="src/images/bread.jpg" width="350px" height="450px"/>
+              </div>
+              <div class="flip-card-back">
+                <h1>"Making bread is my love language"</h1>
+                <img id="happybread" src="src/images/happybread.avif" width="150px" height="150px" />
+              </div>
+            </div>
+          </div>
 
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="src/images/bread2.jpg" width="350px" height="450px"/>
+              </div>
+              <div class="flip-card-back">
+                <h1>これは僕が友達に作って上げたパン。それは大好きよ</h1>
+              </div>
+            </div>
+          </div>
+
+          {/* <img id = "breading" src="src/images/bread2.jpg" height="500" width="400"/> */}
+        </section> 
+
+        <div id="bottom">
+          <h3>Other links</h3>
+          <button id="back" onClick={scrollBack}>bring me back!</button>
+        </div> 
+            <div id="socials">
+
+              
+          
+            </div>
         </div>
     </section>
     </html>
